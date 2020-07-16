@@ -1,0 +1,57 @@
+.ion-color-favorite {
+    --ion-color-base: var(--ion-color-favorite);
+    --ion-color-base-rgb: var(--ion-color-favorite-rgb);
+    --ion-color-contrast: var(--ion-color-favorite-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-favorite-contrast-rgb);
+    --ion-color-shade: var(--ion-color-favorite-shade);
+    --ion-color-tint: var(--ion-color-favorite-tint);
+  }
+
+  .loginHeadImgDiv{
+      width: 100%;
+      height: 150px;
+      text-align: center;
+      margin-top: 60px;
+    //   border: 1px solid red;
+  }
+
+  .loginHeadTxtDiv{
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    line-height: 30px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+ .loginInfoDiv{
+    width: calc(100% - 20px);
+    height: 100px;
+    margin-left:0px;
+    margin-top: 30px;
+    // border: 1px solid red;
+  }
+
+  .loginBtnDiv{
+    width: calc(100% - 20px);
+    margin:0px auto;
+    height: auto;
+    margin-top: 15px;
+  }
+
+  .loginInput{
+    // border: 1px solid red;
+    width:80%;
+    height: 30px;
+    margin-top: 10px;
+    display: block;
+    float: left;
+  }
+
+  .eyeImg{
+    width:24px;
+    height: 24px;
+    margin-top: 10px;
+    display: block;
+    float: right;
+  }

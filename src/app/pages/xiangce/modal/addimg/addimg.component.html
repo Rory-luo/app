@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color="primary">
+      <ion-title>相册图片上传</ion-title>
+      <ion-buttons slot="end">
+          <ion-button (click)="closeModal()">
+              <ion-icon slot="start" name="close"></ion-icon>
+          </ion-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="grzy_xc">
+      <div class="grzy_grxc">
+          <div class="grzy_grxc">
+              <div class="grzy_grxc_sbox" (press)="doPress()">
+                  <i class="ion ion-minus-circled"></i>
+                  <div class="grzy_grxc_sbox1" style="background-image:url(http://qiniu.ynxbgg.net/4538c8eba4104566992af7a1caf17b0a.jpg);-moz-background-size: 100% 100%;background-size: 100% 100%;background-repeat: no-repeat;">
+                  </div>
+              </div>
+              <div class="grzy_grxc_sbox" (click)="selectedImg()">
+                  <div class="grzy_grxc_sbox1">
+                      <img src="../../../../../../assets/images/sj_tianjia.png" />
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="zl" style="margin-top: 15px;">
+      <button class="button button-positive zl_bn">保存</button>
+  </div>
+</ion-content>

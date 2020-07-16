@@ -1,0 +1,25 @@
+<ion-content>
+  <div class="loginHeadImgDiv">
+    <img src="assets/images/head1.png" style="width: 150px;height: 150px;"/>
+  </div>
+  <div class="loginHeadTxtDiv">
+    校君宝
+  </div>
+ <div class="loginInfoDiv">
+  <ion-list>
+    <ion-item>
+      <ion-input clearInput [(ngModel)]="usertel" placeholder="请输入手机号"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input clearInput [(ngModel)]="password" placeholder="请输入密码" type="password" class="loginInput"></ion-input>
+      <img class="eyeImg" src="assets/images/eye.png" (click)="lookMima()"/>
+    </ion-item>
+  </ion-list>
+</div>
+<div class="loginBtnDiv">
+  <ion-list>
+    <ion-button color="favorite" expand="block" (click)="login()"> 登录 </ion-button>
+  </ion-list>
+</div>
+  
+</ion-content>

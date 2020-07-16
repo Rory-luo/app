@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>工作台</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <app-slider></app-slider>
+  <div class="sy_tubiao">
+    <div class="sy_tu">
+        <a  class="sy_dztj" (click)="gotoRizhi()">
+            <img src="assets/images/shouye/chongzhi-ion.png" />
+            <label>日志1</label>
+        </a>
+        <a  class="sy_dztj" (click)="gotoRizhi2()">
+          <img src="assets/images/shouye/chongzhi-ion.png" />
+          <label>日志2</label>
+        </a>
+        <a  class="sy_dztj" (click)="gotoRizhi3()">
+          <img src="assets/images/shouye/chongzhi-ion.png" />
+          <label>日志3</label>
+        </a>
+        <a  class="sy_dztj" (click)="gotoLogin()">
+          <img src="assets/images/shouye/kanjia-ion.png" />
+          <label>登录</label>
+        </a>
+        <a  class="sy_dztj" (click)="gotoPopover()">
+          <img src="assets/images/shouye/chongzhi-ion.png" />
+          <label>popover</label>
+      </a>
+      <a class="sy_dztj" (click)="goXiangce()">
+          <img src="assets/images/shouye/tuangou-ion.png"/>
+          <label>相册</label>
+      </a>
+      
+      <a  class="sy_dztj">
+          <img src="assets/images/shouye/toupiaoion.png"/>
+          <label>定位</label>
+      </a>
+      <a  class="sy_dztj" (click)="gotoLogin()">
+        <img src="assets/images/shouye/kanjia-ion.png" />
+        <label>登录</label>
+      </a>
+    </div>
+</div>
+  
+</ion-content>

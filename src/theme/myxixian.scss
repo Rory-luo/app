@@ -1,0 +1,551 @@
+/*----------------正式--------------*/
+
+
+/*根据自己的需求，自己额外修改显示效果，别再原css上修改*/
+
+
+/*--顶*/
+
+.myxixian_top {
+	border: none !important;
+	margin: 0px;
+	position: relative;
+}
+
+.myxixian_top:after {
+	content: '';
+	pointer-events: none;
+	/*元素永远不会成为鼠标事件的target*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-top: 1px solid #bbb !important;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 400%;
+	height: 400%;
+	-webkit-transform: scale(0.25);
+	transform: scale(0.25);
+	-webkit-transform-origin: left top;
+	transform-origin: left top;
+	z-index: 999999;
+}
+
+
+/*--下*/
+
+.myxixian_bottom {
+	border: none !important;
+	margin: 0px;
+	position: relative;
+}
+
+.myxixian_bottom:after {
+	content: '';
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-bottom: 1px solid #bbb !important;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 400%;
+	height: 400%;
+	-webkit-transform: scale(0.25);
+	transform: scale(0.25);
+	-webkit-transform-origin: left top;
+	transform-origin: left top;
+	z-index: 999999;
+}
+
+
+/*----------左--------*/
+
+.myxixian_left {
+	border: none !important;
+	margin: 0px;
+	position: relative;
+}
+
+.myxixian_left:after {
+	content: '';
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-left: 1px solid #bbb !important;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 400%;
+	height: 400%;
+	-webkit-transform: scale(0.25);
+	transform: scale(0.25);
+	-webkit-transform-origin: left top;
+	transform-origin: left top;
+	z-index: 999999;
+}
+
+
+/*---------右---------*/
+
+.myxixian_right {
+	border: none !important;
+	margin: 0px;
+	position: relative;
+}
+
+.myxixian_right:after {
+	content: '';
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-right: 1px solid #bbb !important;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 400%;
+	height: 400%;
+	-webkit-transform: scale(0.25);
+	transform: scale(0.25);
+	-webkit-transform-origin: left top;
+	transform-origin: left top;
+	z-index: 999999;
+}
+
+
+/*----------上下左右-------*/
+
+.myxixian_top_bottom_left_right {
+	border: none !important;
+	margin: 0px;
+	position: relative;
+}
+
+.myxixian_top_bottom_left_right:after {
+	content: '';
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 1px solid #bbb !important;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 400%;
+	height: 400%;
+	-webkit-transform: scale(0.25);
+	transform: scale(0.25);
+	-webkit-transform-origin: left top;
+	transform-origin: left top;
+	z-index: 999999;
+}
+
+
+/*----------上右-------*/
+
+.myxixian_top_right {
+	border: none !important;
+	margin: 0px;
+	position: relative;
+}
+
+.myxixian_top_right:after {
+	content: '';
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-top: 1px solid #bbb !important;
+	border-right: 1px solid #bbb !important;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 400%;
+	height: 400%;
+	-webkit-transform: scale(0.25);
+	transform: scale(0.25);
+	-webkit-transform-origin: left top;
+	transform-origin: left top;
+	z-index: 999999;
+}
+
+
+/*----------上下-------*/
+
+.myxixian_top_bottom {
+	border: none !important;
+	margin: 0px;
+	position: relative;
+}
+
+.myxixian_top_bottom:after {
+	content: '';
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-top: 1px solid #bbb !important;
+	border-bottom: 1px solid #bbb !important;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 400%;
+	height: 400%;
+	-webkit-transform: scale(0.25);
+	transform: scale(0.25);
+	-webkit-transform-origin: left top;
+	transform-origin: left top;
+	z-index: 999999;
+}
+
+
+/*----------左上-------*/
+
+.myxixian_left_top {
+	border: none !important;
+	margin: 0px;
+	position: relative;
+}
+
+.myxixian_left_top:after {
+	content: '';
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-top: 1px solid #bbb !important;
+	border-left: 1px solid #bbb !important;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 400%;
+	height: 400%;
+	-webkit-transform: scale(0.25);
+	transform: scale(0.25);
+	-webkit-transform-origin: left top;
+	transform-origin: left top;
+	z-index: 999999;
+}
+
+
+/*----------右下-------*/
+
+.myxixian_right_bottom {
+	border: none !important;
+	margin: 0px;
+	position: relative;
+}
+
+.myxixian_right_bottom:after {
+	content: '';
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-right: 1px solid #bbb !important;
+	border-bottom: 1px solid #bbb !important;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 400%;
+	height: 400%;
+	-webkit-transform: scale(0.25);
+	transform: scale(0.25);
+	-webkit-transform-origin: left top;
+	transform-origin: left top;
+	z-index: 999999;
+}
+
+
+/*----------左右-------*/
+
+.myxixian_left_right {
+	border: none !important;
+	margin: 0px;
+	position: relative;
+}
+
+.myxixian_left_right:after {
+	content: '';
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-right: 1px solid #bbb !important;
+	border-left: 1px solid #bbb !important;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 400%;
+	height: 400%;
+	-webkit-transform: scale(0.25);
+	transform: scale(0.25);
+	-webkit-transform-origin: left top;
+	transform-origin: left top;
+	z-index: 999999;
+}
+
+
+/*----------左下-------*/
+
+.myxixian_left_bottom {
+	border: none !important;
+	margin: 0px;
+	position: relative;
+}
+
+.myxixian_left_bottom:after {
+	content: '';
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-bottom: 1px solid #bbb !important;
+	border-left: 1px solid #bbb !important;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 400%;
+	height: 400%;
+	-webkit-transform: scale(0.25);
+	transform: scale(0.25);
+	-webkit-transform-origin: left top;
+	transform-origin: left top;
+	z-index: 999999;
+}
+
+
+/*----------圆角-自己复制下面样式重写需要的弧度------*/
+
+
+/*------4-------*/
+
+.myxixian_radius_4 {
+	border: none !important;
+	margin: 0px;
+	position: relative;
+	border-radius: initial !important;
+}
+
+.myxixian_radius_4:after {
+	content: '';
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 16px !important;
+	-webkit-border-radius: 16px !important;
+	border: 1px solid #bbb !important;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 400%;
+	height: 400%;
+	-webkit-transform: scale(0.25);
+	transform: scale(0.25);
+	-webkit-transform-origin: left top;
+	transform-origin: left top;
+	z-index: 999999;
+}
+
+
+/*------5-------*/
+
+.myxixian_radius_5 {
+	border: none !important;
+	margin: 0px;
+	position: relative;
+	border-radius: initial !important;
+}
+
+.myxixian_radius_5:after {
+	content: '';
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 20px !important;
+	-webkit-border-radius: 20px !important;
+	border: 1px solid #bbb !important;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 400%;
+	height: 400%;
+	-webkit-transform: scale(0.25);
+	transform: scale(0.25);
+	-webkit-transform-origin: left top;
+	transform-origin: left top;
+	z-index: 999999;
+}
+
+
+/*------8-------*/
+
+.myxixian_radius_8 {
+	border: none !important;
+	margin: 0px;
+	position: relative;
+	border-radius: initial !important;
+}
+
+.myxixian_radius_8:after {
+	content: '';
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 32px !important;
+	-webkit-border-radius: 32px !important;
+	border: 1px solid #bbb !important;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 400%;
+	height: 400%;
+	-webkit-transform: scale(0.25);
+	transform: scale(0.25);
+	-webkit-transform-origin: left top;
+	transform-origin: left top;
+	z-index: 999999;
+}
+
+
+/*------10-------*/
+
+.myxixian_radius_10 {
+	border: none !important;
+	margin: 0px;
+	position: relative;
+	border-radius: initial !important;
+}
+
+.myxixian_radius_10:after {
+	content: '';
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 40px !important;
+	-webkit-border-radius: 40px !important;
+	border: 1px solid #bbb !important;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 400%;
+	height: 400%;
+	-webkit-transform: scale(0.25);
+	transform: scale(0.25);
+	-webkit-transform-origin: left top;
+	transform-origin: left top;
+	z-index: 999999;
+}
+
+
+/*------15-------*/
+
+.myxixian_radius_15 {
+	border: none !important;
+	margin: 0px;
+	position: relative;
+	border-radius: initial !important;
+}
+
+.myxixian_radius_15:after {
+	content: '';
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 60px !important;
+	-webkit-border-radius: 60px !important;
+	border: 1px solid #bbb !important;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 400%;
+	height: 400%;
+	-webkit-transform: scale(0.25);
+	transform: scale(0.25);
+	-webkit-transform-origin: left top;
+	transform-origin: left top;
+	z-index: 999999;
+}
+
+
+/*------20-------*/
+
+.myxixian_radius_20 {
+	border: none !important;
+	margin: 0px;
+	position: relative;
+	border-radius: initial !important;
+}
+
+.myxixian_radius_20:after {
+	content: '';
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 80px !important;
+	-webkit-border-radius: 80px !important;
+	border: 1px solid #bbb !important;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 400%;
+	height: 400%;
+	-webkit-transform: scale(0.25);
+	transform: scale(0.25);
+	-webkit-transform-origin: left top;
+	transform-origin: left top;
+	z-index: 999999;
+}
+
+
+/*------25-------*/
+
+.myxixian_radius_25 {
+	border: none !important;
+	margin: 0px;
+	position: relative;
+	border-radius: initial !important;
+}
+
+.myxixian_radius_25:after {
+	content: '';
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 100px !important;
+	-webkit-border-radius: 100px !important;
+	border: 1px solid #bbb !important;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 400%;
+	height: 400%;
+	-webkit-transform: scale(0.25);
+	transform: scale(0.25);
+	-webkit-transform-origin: left top;
+	transform-origin: left top;
+	z-index: 999999;
+}
+
+
+/*-----------------------------*/
+
+.zcdlmyxixian_radius_25 {
+	border: none !important;
+	margin: 0px;
+	position: relative;
+	border-radius: initial !important;
+}
+
+.zcdlmyxixian_radius_25:after {
+	content: '';
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 100px !important;
+	-webkit-border-radius: 100px !important;
+	border: 1px solid #fff !important;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 400%;
+	height: 400%;
+	-webkit-transform: scale(0.25);
+	transform: scale(0.25);
+	-webkit-transform-origin: left top;
+	transform-origin: left top;
+	z-index: 999999;
+}

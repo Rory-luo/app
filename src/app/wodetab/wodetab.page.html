@@ -1,0 +1,72 @@
+<ion-header>
+  <ion-toolbar color="favorite">
+    <ion-buttons slot="start">
+      <ion-back-button text="" defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>我的</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content style="--background: #ededed;">
+  <div class="headContainerDiv">
+    <div class="headDiv">
+      <div class="headimg">
+        <img src="{{staffLogoImg}}" />
+      </div>
+      <div class="userinfoDiv">
+        <div class="titleUP">
+            {{staffName}}<span style="padding-left: 5px;font-size: 10px;">{{nickName}}</span>
+          <!-- <div class="titleTxt">{{userName}}</div>
+          <div class="staffpostTxt">课程顾问</div> -->
+        </div>
+        <div class="titledown">{{userTel}}</div>
+      </div>
+      <div class="rightDiv">
+        <img src="assets/images/todetail.png" style="width:20px;height: 20px;" />
+      </div>
+    </div>
+  </div>
+  <ion-list class="listStyle">
+    <ion-item (click)="Click(1)" detail class="itemStyle">
+      <ion-avatar slot="start">
+        <img src="assets/images/updatemm.png" class="myitemImg">
+      </ion-avatar>
+      <ion-label>
+        修改密码
+      </ion-label>
+    </ion-item>
+    <ion-item (click)="Click(2)" detail class="itemStyle">
+      <ion-avatar slot="start">
+        <img src="assets/images/fankui.png" class="myitemImg">
+      </ion-avatar>
+      <ion-label>
+        意见反馈
+      </ion-label>
+    </ion-item>
+    <ion-item (click)="Click(3)" detail class="itemStyle">
+      <ion-avatar slot="start">
+        <img src="assets/images/clearcache.png" class="myitemImg">
+      </ion-avatar>
+      <ion-label>
+        清除缓存
+      </ion-label>
+    </ion-item>
+    <ion-item (click)="Click(4)" detail class="itemStyle">
+      <ion-avatar slot="start">
+        <img src="assets/images/updatebb.png" class="myitemImg">
+      </ion-avatar>
+      <ion-label>
+        版本升级
+      </ion-label>
+    </ion-item>
+    <ion-item (click)="Click(5)" detail class="itemStyle">
+      <ion-avatar slot="start">
+        <img src="../../assets/images/aboutxjb.png" style="box-shadow: 1px 1px 5px 2px #f8f8f8;" class="myitemImg">
+      </ion-avatar>
+      <ion-label>
+        关于校君宝
+      </ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-button expand="block" color="favorite"  (click)="exportLogin()">退出登录</ion-button>
+</ion-content>

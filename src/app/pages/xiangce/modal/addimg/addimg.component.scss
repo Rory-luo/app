@@ -1,0 +1,65 @@
+.grzy_grxc {
+	width: 100%;
+	overflow: hidden;
+	padding: 5px 7px;
+}
+
+.grzy_grxc_sbox {
+	position: relative;
+	float: left;
+	width: 25%;
+	padding: 5px 7px;
+	background-color: #FFFFFF;
+}
+
+.grzy_grxc_sbox i {
+	font-size: 18px;
+	color: #d81e06;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 100;
+}
+
+.grzy_grxc_sbox1 img {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+}
+
+.grzy_grxc_sbox1 {
+	flex: 1;
+	overflow: hidden;
+	height: 0;
+	padding-top: 100%;
+	position: relative;
+}
+
+.zl {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+
+    .zl .zl_bn {
+        border: none;
+        width: 100%;
+        min-height: 40px;
+        color: #333333;
+        font-size: 14px;
+        background-color: #387ef5;
+        border-radius: initial;
+    }
+
+    .zl .button.activated {
+        color: #333333;
+        background-color: #ffca49;
+    }

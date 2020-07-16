@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar color="favorite">
+    <ion-buttons slot="start">
+      <ion-back-button text="" defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>工作日志</ion-title>
+    <ion-buttons slot="end" (click)="Addrizhi()">
+      写日志
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content pullingIcon="arrow-dropdown" pullingText="下拉刷新" refreshingSpinner="bubbles"
+      refreshingText="加载中...">
+    </ion-refresher-content>
+  </ion-refresher>
+  <ion-card *ngFor="let item of AllData.AllRizhi">
+    <ion-item style="font-size: 13px;">
+      <ion-label>{{item.staffName}}</ion-label>
+      <ion-label style="text-align: right;float: right; font-size: 13px;">{{item.addDatetime|date:"yyyy-MM-dd HH:mm:ss"}}</ion-label>
+    </ion-item>
+    <ion-card-content style="font-size: 13px;">
+      {{item.rizhiContent}}
+    </ion-card-content>
+    <ion-item>
+      <div style="float:left;width: 33%;text-align: center;">
+        <ion-button color="dark" fill="outline"  size="small">查看</ion-button>
+      </div>
+      <div style="float:left;width: 33%;text-align: center;">
+        <ion-button color="dark" fill="outline"  size="small" (click)="updateRizhi(item)">修改</ion-button>
+      </div>
+      <div style="float:left;width: 33%;text-align: center;">
+        <ion-button color="dark" fill="outline"  size="small" (click)="deleteRizhi(item)">删除</ion-button>
+      </div>
+    </ion-item>
+    
+  </ion-card>
+  <ion-card-content *ngIf="!AllData.isMore" style="text-align: center;">
+    暂无更多信息
+  </ion-card-content>
+  <ion-infinite-scroll threshold="20%" (ionInfinite)="LoadMoreData($event)" *ngIf="AllData.isMore">
+    <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="加载中...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>

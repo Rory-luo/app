@@ -1,0 +1,8 @@
+{
+  "name": "fsyapp",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

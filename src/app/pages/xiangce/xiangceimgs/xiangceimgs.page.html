@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button text="" defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>相册详情</ion-title>
+    <ion-buttons slot="end" (click)="selectedImg()">
+      添加照片
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content pullingIcon="arrow-dropdown" pullingText="下拉刷新" refreshingSpinner="bubbles"
+      refreshingText="加载中...">
+    </ion-refresher-content>
+  </ion-refresher>
+  <div class="pageContainer">
+    <div class="box" (click)="selectedImg()">
+      <div class="box_img">
+        <img src="assets/images/sj_tianjia.png" alt="">
+        <!-- <p style="font-size: 12px;text-align: center;">{{item.imgShuoming}}</p> -->
+        <p style="height: 18px;line-height: 18px; font-size: 10px;text-align: center;">添加照片</p>
+      </div>
+    </div>
+    <div class="box" *ngFor="let item of AllData.AllImgs">
+      <div class="box_img">
+        <!-- <img src="http://qiniu.ynxbgg.net/4538c8eba4104566992af7a1caf17b0a.jpg" alt=""> -->
+        <img [src]="item.imgPath" alt="">
+        <!-- <p style="font-size: 12px;text-align: center;">{{item.imgShuoming}}</p> -->
+        <p style="font-size: 12px;text-align: center;">{{item.addTime|date:"yyyy-MM-dd HH:mm:ss"}}</p>
+      </div>
+    </div>
+  </div>
+  <ion-card-content *ngIf="!AllData.isMore" style="text-align: center;">
+    暂无更多信息
+  </ion-card-content>
+  <ion-infinite-scroll threshold="25%" (ionInfinite)="LoadMoreData($event)" *ngIf="AllData.isMore">
+    <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="加载中...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>
